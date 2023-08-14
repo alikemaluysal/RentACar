@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Feature\Commands\Create\" />
+    <Folder Include="Features\Feature\Commands\Delete\" />
+    <Folder Include="Features\Feature\Commands\Update\" />
+    <Folder Include="Features\Feature\Constants\" />
+    <Folder Include="Features\Feature\Profiles\" />
+    <Folder Include="Features\Feature\Queries\" />
+    <Folder Include="Features\Feature\Rules\" />
+    <Folder Include="Features\Brands\Commands\Delete\" />
+    <Folder Include="Features\Brands\Commands\Update\" />
+    <Folder Include="Features\Brands\Constants\" />
+    <Folder Include="Features\Brands\Profiles\" />
+    <Folder Include="Features\Brands\Rules\" />
+    <Folder Include="Features\Brands\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Core.Persistence">
+      <HintPath>..\..\..\corePackages\Core.Packages\Core.Persistence\bin\Debug\net7.0\Core.Persistence.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
