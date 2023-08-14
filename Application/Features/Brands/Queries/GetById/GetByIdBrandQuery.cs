@@ -30,6 +30,7 @@ public class GetByIdBrandQuery : IRequest<GetByIdBrandResponse>
         {
             Brand? brand = await _brandRepository.GetAsync(
                 predicate: b => b.Id == request.Id,
+                //withDeleted: true,
                 cancellationToken: cancellationToken
                 );
 
