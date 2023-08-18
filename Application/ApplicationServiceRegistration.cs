@@ -37,6 +37,8 @@ public static class ApplicationServiceRegistration
 
             configuration.AddOpenBehavior(typeof(CachingBehavior<,>));
 
+            configuration.AddOpenBehavior(typeof(CacheRemovingBehavior<,>));
+
 
         });
 

@@ -13,7 +13,7 @@ builder.Services.AddPersistenceServices(builder.Configuration);
 
 
 //builder.Services.AddDistributedMemoryCache();
-builder.Services.AddStackExchangeRedisCache(opt => opt.Configuration = "localhost:h379");
+builder.Services.AddStackExchangeRedisCache(opt => opt.Configuration = "localhost:6379");
 
 
 
